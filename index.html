@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Ivam Carvalho Novais</title>
+    <style>
+        /* CSS para estilização básica */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        nav button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s;
+            border-radius: 5px;
+            flex: 1 1 45%; /* Ocupa 45% da largura em telas pequenas */
+            max-width: 150px;
+        }
+
+        nav button:hover {
+            background-color: #0056b3;
+        }
+
+        .section {
+            display: none;
+            padding: 20px;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        .section h2 {
+            font-size: 1.8em;
+            color: #007bff;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .images-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .images-container img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* CSS responsivo para telas menores */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            nav button {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+
+            .section h2 {
+                font-size: 1.5em;
+            }
+
+            .images-container img {
+                max-width: 100%; /* Ajuste automático para telas pequenas */
+            }
+
+            .footer {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav button {
+                flex: 1 1 100%; /* Ocupa 100% da largura em telas menores */
+                max-width: none;
+            }
+
+            .images-container {
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Portfólio de Ivam Carvalho Novais</h1>
+        <p>Experiência em Canva, Corel Draw, Photoshop, Illustrator e Inkscape</p>
+    </header>
+
+    <nav>
+        <button onclick="showSection('savamu')">Identidade Visual para Savamu Hortaliças</button>
+        <button onclick="showSection('publicidade')">Publicidade Acadêmica</button>
+        <button onclick="showSection('pessoais')">Trabalhos Pessoais</button>
+        <button onclick="showSection('diversao')">Artes por Diversão</button>
+    </nav>
+
+    <main>
+        <section id="savamu" class="section active">
+            <h2>Identidade Visual para Savamu Hortaliças</h2>
+            <p>Criação da identidade visual para a marca Savamu, uma empresa de hortaliças. O projeto inclui o desenvolvimento do logotipo, embalagens, e outros materiais promocionais.</p>
+            <div class="images-container">
+                <img src="./SABORES DA ROÇA/Green Leaves.png" alt="Exemplo de Identidade Visual para Savamu">
+                <img src="./SABORES DA ROÇA/1.png" alt="Mockup de Embalagem Savamu">
+                <img src="./SABORES DA ROÇA/2.png" alt="Cartão de Visita Savamu">
+                <img src="./SABORES DA ROÇA/3.png" alt="Mockup de Embalagem Savamu">
+                <img src="./SABORES DA ROÇA/4.png" alt="Cartão de Visita Savamu">
+            </div>
+        </section>
+
+        <section id="publicidade" class="section">
+            <h2>Publicidade Acadêmica</h2>
+            <p>Artes criadas para eventos e campanhas acadêmicas. Inclui adaptações para redes sociais, banners impressos, entre outros materiais de comunicação.</p>
+            <div class="images-container">
+                <img src="./facul/banner.png" alt="Campanha Acadêmica">
+                <img height="250px" src="./facul/meninas digitais.png" alt="Post para Redes Sociais">
+                <img height="200px" src="./facul/OBI.png" alt="Banner Acadêmico">
+            </div>
+        </section>
+
+        <section id="pessoais" class="section">
+            <h2>Trabalhos Pessoais</h2>
+            <p>Projetos pessoais e ilustrações que refletem o estilo criativo do designer, incluindo Logotipos e campanhas publicitarias.</p>
+            <div class="images-container">
+                <img src="./pessoal/1.png" alt="Ilustração Digital">
+                <img src="./pessoal/Agropecuária.png" alt="Design de Capa">
+                <img src="./pessoal/Empresa (1).png" alt="Design de Capa">
+            </div>
+        </section>
+
+        <section id="diversao" class="section">
+            <h2>Artes por Diversão</h2>
+            <p>Explorações criativas e artes feitas por diversão, sem objetivo comercial.</p>
+            <div class="images-container">
+                <img src="./diversao/Car na val.png" alt="Arte Abstrata">
+                <img src="./diversao/Design sem nome (2).png" alt="Colagem Criativa">
+                <img height="250px" src="./diversao/logo chat anonimo.png" alt="Colagem Criativa">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Ivam Carvalho Novais. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função JavaScript para mostrar a seção correspondente ao botão clicado
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
